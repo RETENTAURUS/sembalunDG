@@ -1,0 +1,179 @@
+:root {
+  --primary: #000000;
+  --bg: #ffffff;
+  --secondary: #59d672;
+}
+
+* {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+body {
+  font-family: "poppins", sans-serif;
+  background-color: var(--bg);
+  color: #000000;
+  min-height: 2500px;
+  align-items: center;
+  justify-content: center;
+  display: relative;
+}
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: var(--bg);
+  border-bottom: 1px solid #ffffff;
+  position: flex;
+  top: 0;
+  left: 100px;
+  right: 100px;
+}
+.navbar .logo img {
+  width: 150px;
+  top: -14px;
+  position: absolute;
+  left: 50px;
+}
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  color: var(--primary);
+  margin-left: 50px;
+}
+
+.navbar .navbar-nav a {
+  color: #000000;
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0 1rem;
+}
+.navbar .navbar-nav a:hover {
+  color: var(--secondary);
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+#searchInput {
+  padding: 10px;
+  border: 1px solid #252222;
+  border-radius: 5px;
+}
+.navbar .navbar-extra .search-container .login {
+  padding: 8px 12px;
+  border: none;
+  background-color: var(--secondary);
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.navbar .navbar-extra .search-container .register {
+  padding: 8px 12px;
+  border: none;
+  border: 1px solid var(--secondary);
+  background-color: #ffffff;
+  color: var(--secondary);
+  border-radius: 3px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.navbar .navbar-nav a::after {
+  content: " ";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--secondary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.hero .kotak img {
+  width: 1300px;
+  height: 500px;
+  right: 100px;
+  position: relative;
+  display: inline-block;
+  left: 90px;
+  border: none;
+  border-radius: 0.5%;
+}
+
+/* CSS untuk input pencarian */
+.search-input {
+  width: 400px;
+  height: 35px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.search-bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+/* CSS untuk tombol pencarian */
+.search-button {
+  padding: 5px 10px;
+  background-color: var(--secondary);
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  height: 35px;
+}
+
+.content .kotak .text-hero {
+  position: absolute;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 10px;
+  color: var(--bg);
+}
+.content .kotak .text1-hero {
+  position: absolute;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--bg);
+  text-align: center;
+}
+.content .kotak .text2-hero {
+  position: absolute;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--bg);
+  text-align: center;
+}
+.hero .content .logo-dinpar img {
+  width: 130px;
+  height: 70px;
+  position: absolute;
+  top: 67%;
+  border-radius: 5%;
+  left: 45%;
+}

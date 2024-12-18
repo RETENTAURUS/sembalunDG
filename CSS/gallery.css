@@ -1,0 +1,120 @@
+:root {
+    --primary: #000000;
+    --bg: #ffffff;
+    --secondary: #59d672;
+    --button: #408af1;
+  }
+  
+  * {
+    font-family: "poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  body {
+    font-family: "poppins", sans-serif;
+    background-color: var(--bg);
+    color: #000000;
+    min-height: 4000vh;
+    align-items: center;
+    justify-content: center;
+    display: relative;
+  }
+  /* navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: var(--bg);
+    border-bottom: 1px solid #ffffff;
+    position: flex;
+    top: 0;
+    left: 100px;
+    right: 100px;
+  }
+  .navbar .logo img {
+    width: 150px;
+    top: -14px;
+    position: absolute;
+    left: 50px;
+  }
+  .navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    color: var(--primary);
+    margin-left: -170px;
+  }
+  
+  .navbar .navbar-nav a {
+    color: #000000;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+  }
+  .navbar .navbar-nav a:hover {
+    color: var(--secondary);
+  }
+  .gallery-options {
+    display: none;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #444;
+}
+.gallery {
+    width: 80%;
+    min-height: 100vh;
+    padding-top: 150px;
+    padding-left: 300px;
+    padding-bottom: 100px;
+  }
+  
+  .gallery-box .box:nth-child(1) h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .gallery-box .box:nth-child(1) p {
+    line-height: 2;
+  }
+  
+  .gallery-box .box:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 50px;
+  }
+  
+  .gallery-box .box:nth-child(2) img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  
+  .gallery-box .box:nth-child(2) img:hover {
+    opacity: 0.8;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .gallery-box .box:nth-child(2) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (max-width: 575px) {
+    .gallery-box .box:nth-child(2) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
